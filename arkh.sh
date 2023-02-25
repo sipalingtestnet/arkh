@@ -79,16 +79,6 @@ echo "export ADDRBOOK=${ADDRBOOK}" >> $HOME/.bash_profile
 echo "export PORT=${PORT}" >> $HOME/.bash_profile
 source $HOME/.bash_profile
 
-# Set Vars
-if [ ! $NODENAME ]; then
-	read -p "admin@ruangnode.com:~# [ENTER YOUR NODE] > " NODENAME
-	echo 'export NODENAME='$NODENAME >> $HOME/.bash_profile
-fi
-echo ""
-echo -e "YOUR NODE NAME : \e[1m\e[35m$NODENAME\e[0m"
-echo -e "NODE CHAIN CHAIN  : \e[1m\e[35m$CHAIN\e[0m"
-echo -e "NODE PORT      : \e[1m\e[35m$PORT\e[0m"
-echo ""
 
 # Package
 sudo apt -q update
